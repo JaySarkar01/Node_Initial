@@ -1,50 +1,36 @@
-// ------------values from another file start------------
-import app from "./app.js"; // Use for ES Module
-console.log(app.x, " ", app.y);
-// ----------------values from another file end-------------
+// // ------------values from another file start------------
+// import app from "./app.js"; // Use for ES Module
+// console.log(app.x, " ", app.y);
+// // ----------------values from another file end-------------
 
-// ----------chalk start----------
-import chalk from "chalk";
-console.log(chalk.bgBlackBright("this is chalk package"));
-// Combine styled and normal strings
-console.log(chalk.blue("Hello") + " World" + chalk.red("!"));
+// // ----------chalk start----------
+// import chalkfun from './chalkcolor.js';
+// chalkfun();
+// // ----------chalk end-----------
 
-// Compose multiple styles using the chainable API
-console.log(chalk.blue.bgRed.bold("Hello world!"));
+// // -----------------file system start-----------------
 
-// Pass in multiple arguments
-console.log(chalk.blue("Hello", "World!", "Foo", "bar", "biz", "baz"));
+// import fs from "fs";
 
-// Nest styles
-console.log(chalk.red("Hello", chalk.underline.bgBlue("world") + "!"));
+// fs.writeFileSync("hello.txt", "This file was created with fs");
+// // -----------------file system end-------------------
 
-// Nest styles of the same type even (color, underline, background)
-console.log(
-  chalk.green(
-    "I am a green line " +
-      chalk.blue.underline.bold("with a blue substring") +
-      " that becomes green again!"
-  )
-);
-// ----------chalk end-----------
+// // ---------------create server start -------------
+// import http from "http";
 
-// -----------------file system start-----------------
+// http
+//   .createServer((req, res) => {
+//     res.write("Hello, this is Jay");
+//     res.end();
+//   })
+//   .listen(4500, () => {
+//     console.log("Server is running on http://localhost:4500");
+//   });
+// // -------------------create server end--------------
 
-import fs from "fs";
 
-fs.writeFileSync("hello.txt", "This file was created with fs");
-// -----------------file system end-------------------
+// --------------create simple API start-------------
+import startServer from './creatAPI.js';
+startServer();
 
-// ---------------create server start -------------
-import http from "http";
-
-http
-  .createServer((req, res) => {
-    res.write("Hello, this is Jay");
-    res.end();
-  })
-  .listen(4500, () => {
-    console.log("Server is running on http://localhost:4500");
-  });
-// -------------------create server end--------------
-
+// --------------create simple API end--------------
