@@ -36,6 +36,11 @@
 // --------------create simple API end--------------
 
 // ----------------input from command line start--------------
-import inp from "./getting_input_from_command_line.js";
-inp();
+// import inp from "./getting_input_from_command_line.js";
+// inp();
 // ----------------inout from command line end----------------
+
+// ----------------file list start--------------//
+import listFile from "./file_list.js";
+listFile();
+//-----------------file list end----------------//
