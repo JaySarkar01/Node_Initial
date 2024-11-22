@@ -30,7 +30,12 @@
 
 
 // --------------create simple API start-------------
-import startServer from './creatAPI.js';
-startServer();
+// import startServer from './creatAPI.js';
+// startServer();
 
 // --------------create simple API end--------------
+
+// ----------------input from command line start--------------
+import inp from "./getting_input_from_command_line.js";
+inp();
+// ----------------inout from command line end----------------
