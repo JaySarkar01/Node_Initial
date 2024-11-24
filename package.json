@@ -1,5 +1,5 @@
 {
-  "type": "module",
+  "type": "commonjs",
   "name": "node_js",
   "version": "1.0.0",
   "description": "this is info of my currunt project",

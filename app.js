@@ -3,4 +3,4 @@ const app = {
     y:20
 }
 
-export default app;
+module.exports = app;

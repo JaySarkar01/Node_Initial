@@ -1,5 +1,6 @@
 // // ------------values from another file start------------
 // import app from "./app.js"; // Use for ES Module
+// const app = require('./app.js')
 // console.log(app.x, " ", app.y);
 // // ----------------values from another file end-------------
 
@@ -41,6 +42,11 @@
 // ----------------inout from command line end----------------
 
 // ----------------file list start--------------//
-import listFile from "./file_list.js";
-listFile();
+// import listFile from "./file_list.js";
+// listFile();
 //-----------------file list end----------------//
+
+// ------------crud in file system start--------------
+const crud = require('./crud');
+crud();
+// ----------------crud in file system end--------------
