@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>profile</title>
+</head>
+<body>
+    <%-include('commen/header')%>
+    <h1>Welcome <%=user.name%> <br> <%=user.age%> <%=user.city%></h1>
+    <h3>
+        <ul>
+            <%user.skills.forEach((item)=>{ %>
+                <li><%= item%></li>
+                <% }) %>
+        </ul>
+    </h3>
+</body>
+</html>
