@@ -47,6 +47,6 @@
 //-----------------file list end----------------//
 
 // ------------crud in file system start--------------
-const crud = require('./crud');
-crud();
+// const crud = require('./crud');
+// crud();
 // ----------------crud in file system end--------------
